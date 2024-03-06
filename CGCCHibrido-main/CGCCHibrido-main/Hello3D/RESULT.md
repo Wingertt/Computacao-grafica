@@ -1,3 +1,3 @@
 # Ola 3D - Gustavo Wingert
 Resultado da atividade:
-![image](/../../../Images/M1-result.png)
+![image](https://github.com/Wingertt/Computacao-grafica/blob/main/Images/M1-result.png)

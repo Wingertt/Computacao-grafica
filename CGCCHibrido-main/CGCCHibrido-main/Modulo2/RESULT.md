@@ -6,6 +6,6 @@
 - Promover a escala uniforme do cubo, teclas R e T;
 
 ![imagem1](/CGCCHibrido-main/CGCCHibrido-main/Modulo2/imagens/cubo_front.png)
-![imagem2](/CGCCHibrido-main/Modulo2/imagens/cubo_rotacao.png)
-![imagem3](/Modulo2/imagens/cubo_rotacao.png)
-![imagem4](/Computacao-grafica/tree/main/CGCCHibrido-main/CGCCHibrido-main/Modulo2/imagens/cubo_rotacao_roxo.png)
+![imagem2](/CGCCHibrido-main/CGCCHibrido-main/Modulo2/imagens/cubo_rotacao.png)
+![imagem3](/CGCCHibrido-main/CGCCHibrido-main/Modulo2/imagens/cubo_rotacao.png)
+![imagem4](/CGCCHibrido-main/CGCCHibrido-main/Modulo2/imagens/cubo_rotacao_roxo.png)

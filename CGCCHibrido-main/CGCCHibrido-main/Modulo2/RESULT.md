@@ -7,5 +7,5 @@
 
 ![imagem1](/CGCCHibrido-main/CGCCHibrido-main/Modulo2/imagens/cubo_front.png)
 ![imagem2](/CGCCHibrido-main/CGCCHibrido-main/Modulo2/imagens/cubo_rotacao.png)
-![imagem3](/CGCCHibrido-main/CGCCHibrido-main/Modulo2/imagens/cubo_rotacao.png)
-![imagem4](/CGCCHibrido-main/CGCCHibrido-main/Modulo2/imagens/cubo_rotacao_roxo.png)
+![imagem3](/CGCCHibrido-main/CGCCHibrido-main/Modulo2/imagens/cubo_rotacao_roxo.png)
+![imagem4](/CGCCHibrido-main/CGCCHibrido-main/Modulo2/imagens/cubo_rotacao_laranja.png)

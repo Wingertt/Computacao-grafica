@@ -5,7 +5,7 @@
 - Mover (transladar) o cubo nos 3 eixos teclas W, A, S, D, I e J;
 - Promover a escala uniforme do cubo, teclas R e T;
 
-![imagem1](/Computacao-grafica/tree/main/CGCCHibrido-main/CGCCHibrido-main/Modulo2/imagens/cubo_front.png)
-![imagem2](/Computacao-grafica/tree/main/CGCCHibrido-main/CGCCHibrido-main/Modulo2/imagens/cubo_rotacao.png)
-![imagem3](/Computacao-grafica/tree/main/CGCCHibrido-main/CGCCHibrido-main/Modulo2/imagens/cubo_rotacao.png)
+![imagem1](/CGCCHibrido-main/CGCCHibrido-main/Modulo2/imagens/cubo_front.png)
+![imagem2](/CGCCHibrido-main/Modulo2/imagens/cubo_rotacao.png)
+![imagem3](/Modulo2/imagens/cubo_rotacao.png)
 ![imagem4](/Computacao-grafica/tree/main/CGCCHibrido-main/CGCCHibrido-main/Modulo2/imagens/cubo_rotacao_roxo.png)

@@ -283,7 +283,7 @@ int loadTexture(string path)
 void setupWindow(GLFWwindow*& window) {
 	glfwInit();
 
-	window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Modulo 3 - Isadora Guedes", nullptr, nullptr);
+	window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Modulo 3", nullptr, nullptr);
 	glfwMakeContextCurrent(window);
 
 	glfwSetKeyCallback(window, key_callback);

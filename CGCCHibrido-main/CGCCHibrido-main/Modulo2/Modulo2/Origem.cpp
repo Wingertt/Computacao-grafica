@@ -138,7 +138,7 @@ int main()
 		// Poligono Preenchido - GL_TRIanguloS
 
 		glBindVertexArray(VAO);
-		glDrawArrays(GL_TRIanguloS, 0, 72);
+		glDrawArrays(GL_TRIANGLES, 0, 72);
 
 		// Chamada de desenho - drawcall
 		// CONTORNO - GL_LINE_LOOP
@@ -153,7 +153,7 @@ int main()
 		glUniformMatrix4fv(modelLoc, 1, FALSE, glm::value_ptr(model));
 
 		glBindVertexArray(VAO);
-		glDrawArrays(GL_TRIanguloS, 0, 72);
+		glDrawArrays(GL_TRIANGLES, 0, 72);
 
 		glDrawArrays(GL_POINTS, 0, 72);
 		glBindVertexArray(0);
@@ -168,18 +168,18 @@ int main()
 	return 0;
 }
 
-glm::mat4 rotateAll(glm::mat4 model) 
+glm::mat4 rotateAll(glm::mat4 modelo) 
 {
 	float angulo = (GLfloat)glfwGetTime();
 
 	modelo = glm::mat4(1);
 
 	if (rotateX)
-		modelo = glm::rotate(model, angulo, glm::vec3(1.0f, 0.0f, 0.0f));
+		modelo = glm::rotate(modelo, angulo, glm::vec3(1.0f, 0.0f, 0.0f));
 	else if (rotateY)
-		modelo = glm::rotate(model, angulo, glm::vec3(0.0f, 1.0f, 0.0f));
+		modelo = glm::rotate(modelo, angulo, glm::vec3(0.0f, 1.0f, 0.0f));
 	else if (rotateZ)
-		modelo = glm::rotate(model, angulo, glm::vec3(0.0f, 0.0f, 1.0f));
+		modelo = glm::rotate(modelo, angulo, glm::vec3(0.0f, 0.0f, 1.0f));
 
 	return modelo;
 }

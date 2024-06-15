@@ -1,4 +1,4 @@
-# M4 - Atividade Vivencial 1
+# Atividade Vivencial 1
 
 - Acrescentar no visualizador um leitor de arquivos de malhas 3D (no momento, buscando somente a informação de geometria). 
 - Gira por x y z e move-se por wasd.

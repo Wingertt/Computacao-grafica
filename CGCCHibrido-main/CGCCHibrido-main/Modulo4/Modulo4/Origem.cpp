@@ -38,9 +38,9 @@ vector<GLfloat> textures;
 vector<GLfloat> normais;
 
 //file values
-string mtlFilePath = "";
-string textureFilePath = "";
-string basePath = "../../Arquivos/";
+string mtlFilePath = "SuzanneTriTextured.mtl";
+string textureFilePath = "/Suzanne.png";
+string basePath = "../../3D_Models/Suzanne/";
 string objFileName = "SuzanneTriTextured.obj";
 
 
@@ -70,8 +70,10 @@ int main()
 
 	Shader shader("../shaders/sprite.vs", "../shaders/sprite.fs");
 	readFromObj(basePath + objFileName);
-	readFromMtl(basePath + "/mtl/" + mtlFilePath);
-	GLuint textureID = loadTexture(basePath + "/textures/" + textureFilePath);
+	readFromMtl(basePath + mtlFilePath);
+
+	textureFilePath = "Suzanne.png";//resolves a bug or issue that the image path was added with a C: start path
+	GLuint textureID = loadTexture(basePath + textureFilePath);
 	GLuint VAO = setupGeometry();
 
 	glUseProgram(shader.ID);
@@ -141,7 +143,7 @@ void readFromMtl(string path)
 	std::ifstream file(path);
 
 	if (!file.is_open()) {
-		std::cout << "Failed to open the file." << std::endl;
+		std::cout << "Failed to open the file." + path << std::endl;
 	}
 
 	std::string line;
@@ -220,7 +222,7 @@ void readFromObj(string path) {
 	std::ifstream file(path);
 
 	if (!file.is_open()) {
-		std::cout << "Failed to open the file." << std::endl;
+		std::cout << "Failed to open the file." + path << std::endl;
 	}
 
 	std::vector<glm::vec3> temp_vertices;
@@ -294,6 +296,7 @@ int loadTexture(string path)
 {
 	GLuint texID;
 
+	cout << "trying to load texture" + path << endl;
 	glGenTextures(1, &texID);
 	glBindTexture(GL_TEXTURE_2D, texID);
 
@@ -320,7 +323,7 @@ int loadTexture(string path)
 	}
 	else
 	{
-		cout << "Failed to load texture" << endl;
+		cout << "Failed to load texture" + path << endl;
 	}
 
 	stbi_image_free(data);
@@ -357,17 +360,13 @@ void setupTransformacoes(glm::mat4& model) {
 
 	model = glm::translate(model, glm::vec3(translateX, translateY, translateZ));
 	if (rotateX)
-	{
 		model = glm::rotate(model, angle, glm::vec3(1.0f, 0.0f, 0.0f));
-	}
+
 	else if (rotateY)
-	{
 		model = glm::rotate(model, angle, glm::vec3(0.0f, 1.0f, 0.0f));
-	}
+
 	else if (rotateZ)
-	{
 		model = glm::rotate(model, angle, glm::vec3(0.0f, 0.0f, 1.0f));
-	}
 
 	model = glm::scale(model, glm::vec3(scaleLevel, scaleLevel, scaleLevel));
 }
@@ -379,15 +378,9 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 
 	//Escala ---------------
 	if (key == GLFW_KEY_T && action == GLFW_PRESS)
-	{
-		// Aumenta scale
 		scaleLevel += scaleStep;
-	}
 	else if (key == GLFW_KEY_R && action == GLFW_PRESS)
-	{
-		// Diminui scale
 		scaleLevel -= scaleStep;
-	}
 
 	//Rotação----------------------
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)

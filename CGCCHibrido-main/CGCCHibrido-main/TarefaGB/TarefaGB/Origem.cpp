@@ -78,7 +78,7 @@ int main() {
 	Shader shader("../shaders/sprite.vs", "../shaders/sprite.fs");
 
 	// Definição dos objetos a serem usados em cena
-	// Cada objeto deve ter seu próprio arquivo txt de configuração dentro da pasta "Arquivos/config"
+	// Cada objeto deve ter seu próprio arquivo txt de configuração
 	objectsConfig.push_back("cubo.txt");
 	objectsConfig.push_back("bola.txt");
 	objectsConfig.push_back("suzanne.txt");
@@ -459,7 +459,7 @@ void loadTexture(Mesh& object) {
 void setupWindow(GLFWwindow*& window) {
 	glfwInit();
 
-	window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Tarefa GB", nullptr, nullptr);
+	window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Tarefa GB - Gustavo, Melissa e Thalia", nullptr, nullptr);
 	glfwMakeContextCurrent(window);
 
 	glfwSetKeyCallback(window, key_callback);

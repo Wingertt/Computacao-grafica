@@ -1,6 +1,6 @@
 # Blender 3.4.1
 # www.blender.org
-mtllib CuboTextured.mtl
+mtllib Cube/CuboTextured.mtl
 o Cube
 v 0.500000 -0.500000 0.543225
 v -0.500000 -0.500000 0.543225

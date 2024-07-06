@@ -1,0 +1,4 @@
+name suzanne
+obj Suzanne/SuzanneTriTextured.obj
+position 3.0, 0.0, 1.0
+initZ 0

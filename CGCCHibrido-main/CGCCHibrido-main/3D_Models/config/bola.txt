@@ -1,0 +1,4 @@
+name cubo
+obj Suzanne/bola.obj
+position 0.5, 2.0, 0.0
+initX 0

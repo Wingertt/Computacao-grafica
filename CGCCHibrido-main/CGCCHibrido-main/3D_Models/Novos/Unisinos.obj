@@ -1,6 +1,6 @@
 # Blender 3.4.1
 # www.blender.org
-mtllib Unisinos.mtl
+mtllib Novos/Unisinos.mtl
 g Unisinos_Plane.001
 v -0.392733 0.091495 0.000000
 v -0.132328 0.091495 0.000000

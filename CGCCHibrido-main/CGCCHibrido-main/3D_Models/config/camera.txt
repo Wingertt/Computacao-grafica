@@ -1,0 +1,3 @@
+pos 0.0, 2.0, 5.0
+minFrustum 0.1
+maxFrustum 20.0

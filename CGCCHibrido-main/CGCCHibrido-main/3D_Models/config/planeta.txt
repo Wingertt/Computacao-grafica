@@ -1,0 +1,4 @@
+name cubo
+obj Planetas/planeta.obj
+position 0.0, -1.0, 4.0
+initY 0

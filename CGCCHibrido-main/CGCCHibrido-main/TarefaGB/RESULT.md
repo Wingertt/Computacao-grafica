@@ -24,7 +24,7 @@ Gif do funcionamentos dos objetos e da camera:
         - Transformações iniciais (rot, trans, escala) 
         - Em alguns objetos, alguma predefinição de animação (trajetória com curvas paramétricas) 
     - Informação da(s) fonte(s) de luz 
-    - Posição e orientação inicial da câmera, assim como a definição do frustrum.  
+    - Posição e orientação inicial da câmera, assim como a definição do frustum.  
 
 Gif das configurações de objetos e camera:
 ![gif](/CGCCHibrido-main/CGCCHibrido-main/TarefaGB/images/GB-configs.gif)
